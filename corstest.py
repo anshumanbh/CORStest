@@ -99,12 +99,12 @@ def sld(host):
 
 # -------------------------------------------------------------------------------------------------
 
-def error(url, msg): print "\x1b[2m" + url, "- Error:", msg + "\x1b[0m"
-def alert(url, msg): print "\x1b[97;41m" + url, "- Alert:", msg + "\x1b[0m"
-def invalid(url, msg): print "\x1b[30;43m" + url, "- Invalid:", msg + "\x1b[0m"
-def warning(url, msg): print "\x1b[30;48;5;202m" + url, "- Warning:", msg + "\x1b[0m"
-def notvuln(url, msg): print "\x1b[97;100m" + url, "- Not vulnerable:", msg + "\x1b[0m"
-def info(url, msg): print "\x1b[30;42m" + url, "- Access-Control-Allow-Origin:", msg + "\x1b[0m"
+def error(url, msg): print url + ",Error," + msg
+def alert(url, msg): print url + ",Alert," + msg
+def invalid(url, msg): print url + ",Invalid," + msg
+def warning(url, msg): print url + ",Warning," + msg
+def notvuln(url, msg): print url + ",Not vulnerable," + msg
+def info(url, msg): print url + ",Access-Control-Allow-Origin," + msg
 
 # -------------------------------------------------------------------------------------------------
 
