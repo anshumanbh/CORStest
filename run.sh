@@ -1,2 +1,2 @@
 #!/bin/sh
-./corstest.py -s $1 > $2
+./corstest.py $1 > $2
